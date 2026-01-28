@@ -10,8 +10,8 @@ html {
 
 body {
     color: #000;
-    font-family: 'Camfortaa', cursive;
-    /* font-family: 'Yeseva One', cursive; */
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -27,6 +27,13 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    padding: 0;
+    border-radius: 0%;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1180px;
     padding-left: 10px;
@@ -38,12 +45,10 @@ ul {
     display: none;
     width: 30px;
     height: 25px;
-    border: none;
     background-color: transparent;
-    padding: 0;
-    border-radius: 0%;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .menu__btn span {
@@ -52,7 +57,7 @@ ul {
     width: 100%;
 }
 
-header {
+.header {
     background-color: #FFF8F3;
 }
 
@@ -86,6 +91,67 @@ header {
     top: -3px;
 }
 
+.main {
+    background-color: #FFF8F3;
+    overflow-x: clip;
+}
+
+.top {
+    padding: 40px 0 150px;
+    
+
+}
+
+.top__inner {
+    position: relative;
+}
+
+.top__content {
+    width: 370px;
+    padding: 150px 0 250px;
+}
+
+
+.top__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.top__text {
+    margin-bottom: 48px;
+}
+
+.top__buy {
+    padding: 18px 54px;
+    background: #FFBD59;
+    font-family: 'Camfortaa', cursive;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.top__img {
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     padding-top: 40px;
@@ -117,10 +183,42 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .top__content {
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+    .top__img-l {
+        width: 655px;
+    }
+    .top__img {
+        left: 300px;
+    }
+    .top__text {
+        margin-bottom: 30px;
     }
 }
 
@@ -145,8 +243,9 @@ header {
         font-size: 10px;
     }
 
+
     .container {
-        min-width: 640px;
+        max-width: 640px;
     }
 
     .phone::before {
@@ -155,6 +254,22 @@ header {
         left: -16px;
         top: -2px;
         background-size: cover;
+    }
+
+    .top__content {
+        width: 230px;
+    }
+    .top__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .top__text {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+      .top__img {
+        left: 180px;
     }
 }
 
@@ -213,3 +328,51 @@ header {
         font-size: 14px;
     }
 }
+
+@media (max-width: 480px) {
+    .top__img-l {
+        width: 309px;
+        left: 167px;
+    }
+
+    .top__content {
+        width: 180px;
+    }
+    .top__title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .top__text {
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+
+    .top__buy {
+        font-size: 10px;
+        padding: 14px 41px;
+    }
+    .top {
+        padding: 30px 0 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .top__img-l {
+        width: 185px;
+    }
+    .top__img {
+     left: auto;
+     right: 0;
+
+    }
+    .top__content {
+        width: 200px;
+        padding: 20px 0 0;
+    }
+    .top__title {
+        font-size: 18px;
+    }
+    .top__text {
+        font-size: 10px;
+    }
+}   
