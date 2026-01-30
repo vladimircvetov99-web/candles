@@ -297,6 +297,39 @@ button {
     padding-bottom: 40px;
 }
 
+.courses__item-img {
+    position: relative;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Yeseva One', cursive;
+}
+.courses__title {
+    padding: 15px;
+    left: 8px;
+    top: 44% ;
+}
+.courses__time {
+    padding: 7px 10px;
+    left: 10px;
+    top: 60%;
+}
+.courses__time span {
+    font-size: 10px;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.courses__price {
+    padding: 19px 10px;
+    right: 5px;
+    bottom: 2px;   
+}
+
+.courses__title,
+.courses__time,
+.courses__price {
+     background-color: #BEA495;
+    position: absolute;
+}
 
 
 
@@ -601,6 +634,22 @@ button {
         padding: 10px 26px;
     }
 
+    .courses__title {
+        padding: 6px;
+        left: -1px;
+        top: 0;
+    }
+    .courses__time {
+        padding: 5px;
+        left: -1px;
+        top: 59%;
+    }
+    .courses__price {
+        padding: 10px 10px;
+        right: 0;
+        bottom: 9px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -758,7 +807,16 @@ button {
      .steps__item-img {
         width: 66px;
      }
+
+     .courses__content {
+        grid-template-columns: auto;
+     }
+
+
+    
+    
     }
+
 
 
 
@@ -846,6 +904,11 @@ button {
     }
      .steps__item-text {
         font-size: 6px;
+     }
+
+     .courses__item,
+     .courses__item img {
+        width: 255px;
      }
 
 }
